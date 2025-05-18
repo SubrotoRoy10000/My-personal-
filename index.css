@@ -1,0 +1,208 @@
+/* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(90deg, #006400, #dc3545);
+      padding: 25px 15px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-weight: 900;
+      font-size: 2.8rem;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-shadow: 2px 2px 5px #000000cc;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.15);
+      transition: background 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    nav a:hover {
+      background: white;
+      color: #dc3545;
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(220,53,69,0.6);
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+    }
+    /* Profile Section with Picture Right */
+    #about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    #about > div.text {
+      flex: 1;
+      min-width: 250px;
+      padding-right: 20px;
+    }
+    #about > div.image {
+      flex: 0 0 180px;
+    }
+    #about > div.image img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #dc3545;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    #about h2 {
+      font-size: 2rem;
+      color: #006400;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px #a1a1a1;
+    }
+    #about p {
+      font-size: 1.15rem;
+      color: #444;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    #about ul {
+      list-style: disc inside;
+      color: #555;
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+    section {
+      margin-top: 50px;
+    }
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 4px solid #dc3545;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #006400;
+      font-weight: 700;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    #contact p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    #contact a {
+      color: #dc3545;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+    form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form label {
+      font-weight: 600;
+      color: #006400;
+    }
+    form input, form textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #dc3545;
+      outline: none;
+      box-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
+    }
+    form button {
+      width: 150px;
+      padding: 12px;
+      background: #dc3545;
+      color: white;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      align-self: flex-start;
+    }
+    form button:hover {
+      background: #a52a2a;
+    }
+    footer {
+      background: #006400;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 50px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.3);
+    }
+    /* Responsive */
+    @media (max-width: 700px) {
+      #about {
+        flex-direction: column;
+        text-align: center;
+      }
+      #about > div.text {
+        padding-right: 0;
+      }
+      #about > div.image {
+        margin: 0 auto 20px;
+      }
+      nav {
+        gap: 15px;
+      }
+      nav a {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+      form button {
+        width: 100%;
+      }
+    }
+  
